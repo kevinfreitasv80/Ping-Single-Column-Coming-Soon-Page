@@ -1,10 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap');
 
+:root{
+    --gray: hsl(0, 0%, 59%);
+    --blue: hsl(223, 87%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+    --brightPaleBlue: hsl(226, 57%, 93%);
+}
+html, body, input, button{
+    font-family: "Libre Franklin", sans-serif;
+}
 html, body{
     margin: 0;
     padding: 0;
-    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
 }
 h1{
+    font-size: 2.5em;
+    color: var(--gray);
     font-weight: 300;
+    margin-bottom: .3em;
+}
+strong{
+    color: var(--veryDarkBlue);
+}
+header p{
+    margin: 0;
+    font-weight: 400;
+    color: var(--veryDarkBlue);
+}
+i{
+    transform: translate(-22%, -25%);
+    color: var(--blue);
+}
+footer p{
+    font-size: .7em;
+    color: var(--gray);
+}
+input, button{
+    border: none;
+    border-radius: 20em;
+}
+input{
+    width: 22em;
+    outline: none;
+    padding: 0 1.5em;
+    border: 1px solid var(--brightPaleBlue);
+}
+input::placeholder{
+    color: hsl(220, 2%, 75%);
+}
+button{
+    margin-left: 1em;
+    padding: 1em 3.5em;
+    background: var(--blue);
+    color: var(--white);
+    box-shadow: 0 .3em .2em .2em var(--brightPaleBlue);
+    cursor: pointer;
+}
+
+.logo{
+    width: 4.3em;
+    margin-top: 5em;
+}
+.media{
+    margin-top: 2em;
+}
+.media, .notify{
+    justify-content: center;
+    display: flex;
+}
+.media article{
+    width: .5em;
+    height: .5em;
+    padding: 1em;
+    border-radius: 50%;
+    border: 1px solid var(--brightPaleBlue);
+}
+.media article:not(:last-child){
+    margin-right: 1em;
+}
+.illusDash{
+    width: 31.25em;
+}
+.notify{
+    margin: 2em 0 4em 0;
 }
