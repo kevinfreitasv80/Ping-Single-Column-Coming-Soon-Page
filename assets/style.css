@@ -87,7 +87,7 @@ button{
 .notify{
     margin: 2em 0 4em 0;
 }
-.notify article{
+.notify div{
     position: relative;
 }
 span{
@@ -98,6 +98,16 @@ span{
     font-size: .7em;
     font-style: italic;
     color: var(--red);
+}
+a{
+    text-decoration: none;
+}
+.label-invisible{
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 @media (max-width: 525px){
