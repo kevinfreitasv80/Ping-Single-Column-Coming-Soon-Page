@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 const span = document.getElementById("spanError");
 const input = document.getElementById("inputEmail");
-const validEmail = /\S+@\S+\.\S+/;
+const validEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
